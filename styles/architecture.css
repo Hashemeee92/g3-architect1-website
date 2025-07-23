@@ -172,6 +172,7 @@ h5{
     margin: 60px auto;
 p{
     margin: 50px auto;
+    text-align: center;
 }
 }
 .sponsors-by{
@@ -187,12 +188,13 @@ p{
     max-height: 50px;
     margin: 0 auto;
 }
-/* .bg-footer{
+.bg-footer{
     max-width: 1440px;
-       background-color: #FFF4E7
+    padding 30px 240px;
     text-align: center;
+    background-color: #FFF4E7
     font-size: 1.5rem;
-} */
+}
 
 /*Responsive media query*/
 @media  screen and (max-width: 576px){
