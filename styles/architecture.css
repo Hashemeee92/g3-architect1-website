@@ -4,7 +4,7 @@
 
 
 .work-sans-font {
-  font-family: "Work Sans", sans-serif;
+  font-family: "Work-Sans", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
@@ -13,22 +13,40 @@
 .display-flex{
     display: flex;
 }
-/* Dark 01 */
-.text-black{
-    color: rgba(19, 19, 19, 1);
-    
-}
-
-/* Dark-02 */
+  
+/* Dark-01 */
 .text-light-gray{
-    color: rgba(66, 66, 66, 1);
-    font-size: 18px;
-    font-weight: 600;
+    color: rgba(114, 114, 114, 1);
+    font-size: 3rem;
+    font-weight: 500;
+    font-family: work-sans;
 }
-/* Dark -03 */
+/* Dark 02 */
 .text-gray{
-    color: #727272;
-   
+    color: rgba(19, 19, 19, 1);
+    font-size: 45px;
+    font-weight: 700;
+}  
+/* Dark -03 */
+.text-primary{
+    color: #FF900E
+    font-size: 2.9rem;
+    font-weight: 500;
+}   
+
+    
+.btn-primary{
+    background-color: rgba(255, 144, 14, 1);
+    color: white;
+    padding: 20px 25px;
+    border-radius: 8px;
+    font-size: 1.25rem;
+    font-weight: 600;
+    border: none;
+}
+main{
+    max-width: 1440px;
+    margin: 0 auto;
 }
 /* Background color header */
 .bg-light{
@@ -40,8 +58,12 @@
 /* navbar related  styles */
 .navbar{
     justify-content: space-between;
-    
-    
+    align-items: center;
+     
+}
+.navbar, .banner{
+    max-width: 1440px;
+    margin: 0 auto;
 }
 .nav-item{
     list-style: none;
@@ -51,3 +73,141 @@
 .nav-link{
     text-decoration: none;
 }
+/* Banner related styles */
+
+.banner-content{
+    max-width: 860px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.banner-title{
+    font-size: 4rem;
+    color: rgba(19, 19, 19, 1);
+    font-weight: bold;
+
+}
+.banner-img{
+    width: 100%;
+}
+/* Team and feature related  */
+.teams{
+    align-items: center;
+
+}
+main > section{
+    margin-top: 130px;
+}
+.team-img-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+h3{
+    font-size: 2.8rem;
+}
+.our-features{
+    margin-left: 76px; 
+    max-width: 530px;
+}
+#quick-list{
+    font-family: sans-serif;
+    font-size: 2.8rem;
+    font-weight: 500;
+}
+
+.feature-title{
+    font-size: 2.9rem;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: #FF900E;
+}
+
+.love-enjoy-title{
+    display: flex;
+    margin-top: 50px;
+    
+    
+    font-family: sans-serif;
+    font-weight: 700;
+}
+.desktop-super{
+    padding: 30px;
+    max-width: 600px;
+    margin: 50px 30px;
+    
+}
+h4{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.btn-exp{
+    max-height: 200px;
+    max-width: 340px;
+    
+}
+.block-flex{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 1140px;
+    margin: 0 auto;
+    gap: 124px;
+    text-align: center;
+}
+.box-size{
+    max-width: 240px;
+    max-height: 240px;
+    border: 1px dotted #FF900E;
+}
+/* Our sponsor styles */
+.sponsor{
+    max-width: 542px;
+    margin: 0 auto;
+    text-align: center;
+}
+h5{
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin: 20px 0;
+    margin: 60px auto;
+p{
+    margin: 50px auto;
+}
+}
+.sponsors-by{
+    display: flex;
+    max-width: 1440px;
+    justify-content: space-between;
+    margin: 70pxpx auto;
+    gap: 190px;
+
+}
+.sponsor-company{
+    max-width: 180px;
+    max-height: 50px;
+    margin: 0 auto;
+}
+/* .bg-footer{
+    max-width: 1440px;
+       background-color: #FFF4E7
+    text-align: center;
+    font-size: 1.5rem;
+} */
+
+/*Responsive media query*/
+@media  screen and (max-width: 576px){
+    .navbar, 
+    .nav-links
+    .teams{
+        flex-direction: column;
+    }
+    .team-img-container{
+    grid-template-columns: repeat(1, 1fr);
+}
+..our-features{
+    margin-left: 20px;
+}
+    
+}
+
+
